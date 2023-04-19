@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="horario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <nav class="nav-links" id="navLinks">
+        <img src="/imagenes/logoNavegacion.webp" alt="">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Mapa</a></li>
+          <li class="selected"><a href="#">Horario</a></li>
+          <li><a href="#">Dinopedia</a></li>
+          <li><a href="#">Atracciones</a></li>
+          <li><a href="#">Turs</a></li>
+          <li><a href="#">Entradas</a></li>
+          <li><a href="#">Adopta</a></li>
+        </ul>
+      </nav>
+
+<section class="imgportada">
+    <p>HORARIO</p>
+    <img src="/imagenes/portadaHorario.jpg" alt="Paisaje isla Nublar">
+</section>
+        
+<div id="popUpFinSemana" style="display: none;">
+    <ion-icon clase="iconPopup" name="close-outline" onclick="closePopup()"></ion-icon>
+    <p>Hora apertura: 9:30h</p>
+    <p>Hora cierre: 23:00h</p>
+</div>
+<div id="popUpSemana" style="display: none;">
+    <ion-icon name="close-outline" onclick="closePopup()"></ion-icon>
+    <p>Hora apertura: 9:30h</p>
+    <p>Hora cierre: 21:00h</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="horario.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
